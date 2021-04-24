@@ -1,0 +1,222 @@
+$cor-1:  hsl(0, 0%, 55%);
+$cor-2: hsl(0, 0%, 41%);
+$cor-3: white;
+$cor-4: black;
+/*Estilos descendentes*/
+%link {
+    text-decoration: none;
+    color: $cor-3;
+    display: inline;
+    margin-left: 10px;
+}
+/*geral style*/
+*{
+margin: 0px;
+padding: 0px;
+box-sizing: border-box;
+font-family: sans-serif;
+}
+
+body{
+min-width: 300px;
+  
+}
+/*Estilizacao do header*/
+header{
+   
+    
+    margin-bottom: 150px;
+
+    
+    .hed01{
+        width: 100%;
+        
+        
+    }
+
+
+.nav{
+   position: absolute; 
+   top: 0;
+   display: flex;
+   justify-content:space-around;
+   width: 100%;
+  
+   
+    b{
+     color: $cor-3; 
+     margin-left:20px ;  
+     font-size: larger;
+       
+      
+    }
+    a{
+        font-size: 0.8rem;
+        @extend %link;
+    
+    &:hover{
+        border-bottom: 0.5px solid $cor-3;
+    }
+}
+}
+
+.hedtext{
+    
+    margin-left: 10%;
+    position: absolute;
+    margin-top: -250px;
+    font-size: 2.5rem;
+    color: $cor-3;
+   
+    border: 1px solid white;
+    width: 300px;
+    padding: 15px;
+    
+   
+}
+}
+
+/*Estilizacao do main*/
+main{
+
+    .seelink{
+        @extend %link;
+        color: black;
+        border: 1px solid black;
+        padding: 10px;
+        padding-left: -50px;
+        text-align: center;
+        
+       &:hover{
+           background-color: $cor-4;
+           color: $cor-3;
+           transition:0.5s;
+       }
+    }
+    .sec01{
+        display: flex;
+        margin-left: 5%;
+       
+        .divsec01{
+           
+            margin-left: 5%;
+        }
+        .divsec02{
+            width: 400px;
+            height: 200px;
+            padding: 20px;
+            align-content: center;
+            background-color:$cor-3;
+            margin-left: -100px;
+            margin-top: 200px;
+
+    }
+    .sec02{
+        width: 100%;
+        margin:  auto;
+        
+        align-content: center;
+         
+       
+            
+
+         
+        }
+  
+    }
+
+    .sec02{
+        width: 100%;
+        margin-top: 80px;
+       
+        
+        
+    
+        .btns{
+            display: flex;
+            justify-content: space-around;
+            text-align: center;
+           
+            h1{
+                font-weight:normal;
+            }
+        }
+
+        .container,.container2{
+            display:flex;
+            align-items: center;
+            
+            margin-left: 10%;
+            margin-right: 10%;
+
+            img{
+                margin-left: 20px;
+                margin-right: 20px;
+            }
+            
+        }
+        .box{
+           
+            text-align: center;
+           margin: 0 auto;
+            margin: 10px;
+            
+            position: relative;
+        
+            
+        }
+        .div1{
+            position: absolute;
+            
+            bottom: 0;
+            padding: 10px;
+            color: $cor-3;
+            z-index: 999;
+            display: flex;
+            align-items: center;
+            top: 80px;
+           left:50px;
+        }  
+
+       a{
+        
+            @extend %link;
+            color: black;
+            border: 1px solid black;
+            padding: 10px;
+            padding-left: -50px;
+            text-align: center;
+           display: none;
+            
+           &:hover{
+               background-color: $cor-4;
+               color: $cor-3;
+               transition:0.5s;
+           }
+        
+       }
+    }
+
+}
+/*Estilizacao do footer*/
+footer{
+    width: 100%;
+    margin-top: 100px;
+    background: $cor-4;
+    color: $cor-3;
+    height: 100px;
+    display: flex;
+    margin-right: -10px;
+    justify-content: space-around;
+    text-align: center;
+    min-width: 100px;
+    a{
+        @extend %link;
+        margin-top: 20px;
+    }
+    div{
+        
+    }
+}
+/* responsive media*/
+@import "mediaquerys.scss";
