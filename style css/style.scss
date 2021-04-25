@@ -37,7 +37,7 @@ header{
 
 .nav{
    position: absolute; 
-   top: 0;
+   top: 10px;
    display: flex;
    justify-content:space-around;
    width: 100%;
@@ -51,7 +51,7 @@ header{
       
     }
     a{
-        font-size: 0.8rem;
+        
         @extend %link;
     
     &:hover{
@@ -79,20 +79,7 @@ header{
 /*Estilizacao do main*/
 main{
 
-    .seelink{
-        @extend %link;
-        color: black;
-        border: 1px solid black;
-        padding: 10px;
-        padding-left: -50px;
-        text-align: center;
-        
-       &:hover{
-           background-color: $cor-4;
-           color: $cor-3;
-           transition:0.5s;
-       }
-    }
+  
     .sec01{
         display: flex;
         margin-left: 5%;
@@ -140,6 +127,22 @@ main{
             h1{
                 font-weight:normal;
             }
+            .seelink{
+                @extend %link;
+                color: rgb(214, 30, 30);
+                border: 1px solid black;
+                padding: 10px;
+                padding-left: -50px;
+                font-weight: 800;
+                text-align: center;
+                
+                
+               &:hover{
+                   background-color: $cor-4;
+                   color: $cor-3;
+                   transition:0.5s;
+               }
+            }
         }
 
         .container,.container2{
@@ -171,32 +174,36 @@ main{
             bottom: 0;
             padding: 10px;
             color: $cor-3;
-            z-index: 999;
+            z-index: 99;
             display: flex;
             align-items: center;
             top: 80px;
            left:50px;
         }  
 
-       a{
-        
-            @extend %link;
-            color: black;
-            border: 1px solid black;
-            padding: 10px;
-            padding-left: -50px;
-            text-align: center;
-           display: none;
-            
-           &:hover{
-               background-color: $cor-4;
-               color: $cor-3;
-               transition:0.5s;
-           }
         
        }
     }
 
+    .seelink1{
+        
+        @extend %link;
+        color: black;
+        border: 1px solid black;
+        padding: 10px;
+        padding-left: -50px;
+        text-align: center;
+       display: none;
+       width: 100px;
+       margin-left: 120px;
+       margin-right: 100px;
+       font-weight: bold;
+        
+       &:hover{
+           background-color: $cor-4;
+           color: $cor-3;
+           transition:0.5s;
+       }
 }
 /*Estilizacao do footer*/
 footer{
@@ -214,8 +221,14 @@ footer{
         @extend %link;
         margin-top: 20px;
     }
-    div{
-        
+    .fotdi01{
+        margin-top:-20px;
+    }
+    .fotdi0{
+        margin-top: 20px;
+    }
+    .fotdi02{
+    margin-top: 10px;    
     }
 }
 /* responsive media*/

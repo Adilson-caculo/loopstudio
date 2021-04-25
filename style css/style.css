@@ -1,5 +1,5 @@
 /*Estilos descendentes*/
-header .nav a, main .seelink, main .sec02 a, footer a {
+header .nav a, main .sec02 .btns .seelink, .seelink1, footer a {
   text-decoration: none;
   color: white;
   display: inline;
@@ -30,7 +30,7 @@ header .hed01 {
 
 header .nav {
   position: absolute;
-  top: 0;
+  top: 10px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -43,10 +43,6 @@ header .nav b {
   color: white;
   margin-left: 20px;
   font-size: larger;
-}
-
-header .nav a {
-  font-size: 0.8rem;
 }
 
 header .nav a:hover {
@@ -65,21 +61,6 @@ header .hedtext {
 }
 
 /*Estilizacao do main*/
-main .seelink {
-  color: black;
-  border: 1px solid black;
-  padding: 10px;
-  padding-left: -50px;
-  text-align: center;
-}
-
-main .seelink:hover {
-  background-color: black;
-  color: white;
-  -webkit-transition: 0.5s;
-  transition: 0.5s;
-}
-
 main .sec01 {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -127,6 +108,22 @@ main .sec02 .btns h1 {
   font-weight: normal;
 }
 
+main .sec02 .btns .seelink {
+  color: #d61e1e;
+  border: 1px solid black;
+  padding: 10px;
+  padding-left: -50px;
+  font-weight: 800;
+  text-align: center;
+}
+
+main .sec02 .btns .seelink:hover {
+  background-color: black;
+  color: white;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
 main .sec02 .container, main .sec02 .container2 {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -155,7 +152,7 @@ main .sec02 .div1 {
   bottom: 0;
   padding: 10px;
   color: white;
-  z-index: 999;
+  z-index: 99;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -166,16 +163,20 @@ main .sec02 .div1 {
   left: 50px;
 }
 
-main .sec02 a {
+.seelink1 {
   color: black;
   border: 1px solid black;
   padding: 10px;
   padding-left: -50px;
   text-align: center;
   display: none;
+  width: 100px;
+  margin-left: 120px;
+  margin-right: 100px;
+  font-weight: bold;
 }
 
-main .sec02 a:hover {
+.seelink1:hover {
   background-color: black;
   color: white;
   -webkit-transition: 0.5s;
@@ -201,6 +202,18 @@ footer {
 
 footer a {
   margin-top: 20px;
+}
+
+footer .fotdi01 {
+  margin-top: -20px;
+}
+
+footer .fotdi0 {
+  margin-top: 20px;
+}
+
+footer .fotdi02 {
+  margin-top: 10px;
 }
 
 /* responsive media*/
@@ -245,7 +258,7 @@ footer a {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    height: 300px;
+    height: 500px;
   }
   footer .fotdi01 a {
     display: block;
@@ -300,7 +313,7 @@ footer a {
   /* fullscreen */
   .menu-section.on {
     position: absolute;
-    top: 0;
+    top: -10px;
     left: 0;
     width: 100%;
     height: 140vh;
@@ -362,6 +375,20 @@ footer a {
   body {
     min-width: 346px;
     overflow-x: hidden;
+  }
+  .divsec01 {
+    margin: 0 auto;
+  }
+  .divsec01 img {
+    margin-left: 20px;
+  }
+  .seelink1 {
+    display: inline-block;
+  }
+  .divsec02 p {
+    text-align: center;
+    margin: 0 auto;
+    width: 250px;
   }
   .menu-section.on {
     min-width: 346px;
